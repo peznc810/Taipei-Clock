@@ -13,7 +13,7 @@ function updateTime() {
   minutes.style.transform = `rotate(${time.getMinutes() * 6 - 180}deg)`;
   seconds.style.transform = `rotate(${time.getSeconds() * 6 - 180}deg)`;
 
-  if (time.getHours() >= 15 || time.getHours() < 6) {
+  if (time.getHours() >= 18 || time.getHours() < 6) {
     bg.classList.remove("morning");
     bg.classList.add("night");
   } else {
